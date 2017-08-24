@@ -2,6 +2,7 @@
 FILE=${BCK_FILESYSTEM_PATH}
 DIR=$(dirname "${BCK_FILESYSTEM_PATH}")
 TIME=${BCK_TIME_INTERVAL:-3600}
+
 echo "filesystem: ${BCK_FILESYSTEM_PATH}"
 echo "dir: ${DIR}"
 echo "time: ${BCK_TIME_INTERVAL}"
