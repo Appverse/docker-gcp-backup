@@ -14,7 +14,7 @@ fi
 # TODO:gstutil ls to check if file exists on cloud
 echo "download file from gsutil"
 gsutil cp ${BCK_GSUTILS_PATH} ${DIR}
-fi
+
 echo "Checking ${FILE} with time interval ${TIME}"
 echo "Press [CTRL+C] to stop ..."
 while :
