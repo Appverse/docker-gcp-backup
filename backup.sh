@@ -1,7 +1,7 @@
 #!/bin/bash
 FILE=${BCK_FILESYSTEM_PATH}
 DIR=$(dirname "${BCK_FILESYSTEM_PATH}")
-TIME=${BCK_TIME_INTERVAL:-3600}
+TIME=${BCK_TIME_INTERVAL:-300}
 
 echo "filesystem: ${BCK_FILESYSTEM_PATH}"
 echo "dir: ${DIR}"
