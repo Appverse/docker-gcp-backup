@@ -15,8 +15,7 @@ fi
 
 # TODO:gstutil ls to check if file exists on cloud
 echo "download file from gsutil"
-gsutil cp ${BCK_GSUTILS_PATH} ${DIR}
-chmod 600 ${FILE}
+gsutil cp -p ${BCK_GSUTILS_PATH} ${DIR}
 
 echo "Checking ${FILE} with time interval ${TIME}"
 echo "Press [CTRL+C] to stop ..."
@@ -26,6 +25,6 @@ do
   echo "checking file ${FILE}."
   if [ -f ${FILE} ]; then
     echo "upload file to gsutil"
-    gsutil rsync -c ${FILE} ${BCK_GSUTILS_PATH}
+    gsutil rsync -p -r ${FILE} ${BCK_GSUTILS_PATH}
   fi
 done
