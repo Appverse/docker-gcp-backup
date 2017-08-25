@@ -25,6 +25,6 @@ do
   echo "checking file ${FILE}."
   if [ -f ${FILE} ]; then
     echo "upload file to gsutil bucket: ${BCK_GSUTILS_PATH%/*}"
-    gsutil rsync -p -r ${FILE} ${BCK_GSUTILS_PATH%/*}
+    gsutil rsync -p -r ${DIR} ${BCK_GSUTILS_PATH%/*}
   fi
 done
